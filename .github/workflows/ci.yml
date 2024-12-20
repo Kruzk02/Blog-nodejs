@@ -23,6 +23,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+      
+      - name: Check for test files
+        run: |
+          if ! find . -name "*.test.js" | grep -q .; then
+            echo "No test files found. Skipping tests.";
+            exit0;
+          fi
 
       - name: Run tests
         run: npm test
