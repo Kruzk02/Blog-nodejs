@@ -1,0 +1,34 @@
+{
+  "name": "blog-nodejs",
+  "version": "1.0.0",
+  "description": "Blog built using nodejs and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kruzk02/Blog-nodejs.git"
+  },
+  "author": "ThienPhuc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kruzk02/Blog-nodejs/issues"
+  },
+  "homepage": "https://github.com/Kruzk02/Blog-nodejs#readme",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["json", "lcov", "text", "clover"]
+  }
+}
+
