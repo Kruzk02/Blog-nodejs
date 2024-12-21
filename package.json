@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Blog built using nodejs and mongodb",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll"
   },
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/Kruzk02/Blog-nodejs#readme",
   "dependencies": {
+    "mongoose": "^8.9.2",
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
@@ -28,7 +31,11 @@
     "testEnvironment": "node",
     "collectCoverage": true,
     "coverageDirectory": "coverage",
-    "coverageReporters": ["json", "lcov", "text", "clover"]
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ]
   }
 }
-
